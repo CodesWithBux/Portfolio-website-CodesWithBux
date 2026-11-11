@@ -746,3 +746,30 @@ footer a:hover { color: #d4a017; }
 @media (max-width: 520px) {
   .form-wrap { padding: 1.5rem; }
 }
+
+/* Featured project cards: image, copy and two visible demo actions */
+.projects-full-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); align-items: stretch; }
+.project-card { display: flex; flex-direction: column; }
+.project-img-wrap { background: linear-gradient(180deg, #f8f5ef 0%, #eee7db 100%); aspect-ratio: 5 / 3; border-bottom: 1px solid #ece4d8; }
+.project-img-wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.project-info { display: flex; flex-direction: column; flex: 1; }
+.project-info h3 { line-height: 1.25; }
+.project-info > p:not(.project-tag) { flex: 1; }
+.project-actions { display: flex; flex-wrap: wrap; gap: .65rem; align-items: center; margin-top: 1.15rem; }
+.project-actions .btn { text-decoration: none; font-weight: 700; padding: .65rem 1.05rem; white-space: nowrap; }
+.project-live { background: #b8860b; color: #0e0d0b; border: 1px solid #b8860b; }
+.project-live:hover, .project-live:focus-visible { background: #d4a017; color: #0e0d0b; }
+.project-source { border: 1px solid #0e0d0b; color: #0e0d0b; background: transparent; }
+.project-source:hover, .project-source:focus-visible { color: white; background: #0e0d0b; }
+@media (max-width: 520px) { .project-info { padding: 1.2rem; } .project-actions .btn { flex: 1; text-align: center; } }
+
+/* Contact form usability */
+.contact-help { margin: 1rem 0 0; color: #4a4540; font-size: .88rem; line-height: 1.6; }
+#portfolio-contact-form input:invalid:not(:placeholder-shown), #portfolio-contact-form textarea:invalid:not(:placeholder-shown) { border-color: #b42318; }
+#portfolio-contact-form button[type="submit"]:focus-visible { outline: 3px solid #b8860b; outline-offset: 3px; }
+
+
+.project-card { position: relative; }
+.project-card::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: 12px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.55); }
+.project-info h3 { margin-bottom: .55rem; }
+.project-info .project-tag { font-weight: 700; }
