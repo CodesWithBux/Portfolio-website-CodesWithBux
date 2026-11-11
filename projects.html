@@ -24,7 +24,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html" class="nav-active" aria-current="page">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -35,99 +35,91 @@
 
     <section class="page-banner" aria-labelledby="page-title">
       <h1 id="page-title" >My Projects</h1>
-      <p>Websites and applications I designed and built from scratch.</p>
+      <p>Six carefully selected front-end projects, each presented with a live demo and source code.</p>
     </section>
 
     <section class="section-gap" aria-labelledby="projects-heading">
       <article class="container">
-        <h2 id="projects-heading" style='text-align:center;'>All Projects</h2>
+        <h2 id="projects-heading" style='text-align:center;'>Featured Projects</h2>
 
-        <ul class="projects-full-grid" aria-label="List of web development projects">
-
+        <ul class="projects-full-grid" aria-label="Six featured web development projects">
           <li class="project-card">
-            <figure class="project-img-wrap">
-              <img
-                src="images/SalonWeb.png"
-                alt="Hair Day salon website "
-                width="560"
-                height="340"
-              >
-            </figure>
-            <section class="project-info" aria-label="Hair Day Salon project details">
-              <p class="project-tag">HTML &amp; CSS</p>
-              <h3>Hair Day Salon</h3>
-              <p>
-                A complete salon website featuring a striking typographic HD logo, a soft pink colour palette,
-                and a responsive three-column services Cut &amp; Style, Beauty, and Tutorials.
-                Includes a Salon Special promotional banner advertising up to 50% off. Built using semantic HTML
-                and custom CSS with careful attention to visual hierarchy.
-              </p>
-            </section>
-          </li>
-
-          <li class="project-card">
-            <figure class="project-img-wrap">
-              <img
-                src="images/ZooWeb.png"
-                alt="Pine City Zoo website "
-                width="560"
-                height="340"
-              >
-            </figure>
+            <figure class="project-img-wrap"><img src="images/project-pine-city-zoo.jpg" alt="Portfolio preview for the Pine City Zoo project" loading="lazy" width="560" height="340"></figure>
             <section class="project-info" aria-label="Pine City Zoo project details">
-              <p class="project-tag">HTML &amp; CSS</p>
+              <p class="project-tag">HTML5 · CSS3</p>
               <h3>Pine City Zoo</h3>
-              <p>
-                An informational website for Pine City Zoo featuring an animal directory with thumbnail
-                photos and descriptions for four animals: Elephant, Giraffe, Koala, and Monkey.
-                The warm wood-texture header and bold orange branding give it a memorable identity.
-                Navigation links to Animals, Map, and Places sections.
-              </p>
+              <p>A mobile-friendly zoo guide with an illustrated map, animal listings, attractions, weather updates and a feedback screen.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary project-live" href="https://codeswithbux.github.io/Zoo-App/" target="_blank" rel="noopener noreferrer" aria-label="Live View: Pine City Zoo">Live View <span aria-hidden="true">↗</span></a>
+                <a class="btn project-source" href="https://github.com/codeswithbux/Zoo-App" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Pine City Zoo">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
             </section>
           </li>
 
           <li class="project-card">
-            <figure class="project-img-wrap">
-              <img
-                src="images/CalcWeb.png"
-                alt="Scientific calculator app with a pink body, number pad, orange AC and DEL buttons, white operator buttons, and scientific function buttons for sin, cos, tan, log, square root, and exponents"
-                width="400"
-                height="480"
-              >
-            </figure>
+            <figure class="project-img-wrap"><img src="images/project-scientific-calculator.jpg" alt="Portfolio preview for the Scientific Calculator project" loading="lazy" width="560" height="340"></figure>
             <section class="project-info" aria-label="Scientific Calculator project details">
-              <p class="project-tag">HTML, CSS &amp; JavaScript</p>
+              <p class="project-tag">HTML5 · CSS3 · JavaScript</p>
               <h3>Scientific Calculator</h3>
-              <p>
-                A fully functional scientific calculator supporting standard arithmetic plus sin, cos, tan,
-                logarithms, natural exponents, power operations, square root, factorial, pi, percentage,
-                and parentheses. Features a vibrant pink design with a dual-line display showing
-                current input and running result simultaneously.
-              </p>
+              <p>An interactive scientific calculator with arithmetic, trigonometry, logarithms, powers, factorials and a dual display.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary project-live" href="https://codeswithbux.github.io/Calculator-App/" target="_blank" rel="noopener noreferrer" aria-label="Live View: Scientific Calculator">Live View <span aria-hidden="true">↗</span></a>
+                <a class="btn project-source" href="https://github.com/codeswithbux/Calculator-App" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Scientific Calculator">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
             </section>
           </li>
 
           <li class="project-card">
-            <figure class="project-img-wrap">
-              <img
-                src="images/DeptWeb.png"
-                alt="South African National Treasury website"
-                width="560"
-                height="340"
-              >
-            </figure>
-            <section class="project-info" aria-label="National Treasury project details">
-              <p class="project-tag">HTML &amp; CSS</p>
-              <h3>National Treasury Department Page</h3>
-              <p>
-                An informational page modelled on South Africa's National Treasury website,
-                profiling the Minister of Finance Enoch Godongwana and deputy ministers
-                Dr David Masondo and Ashor Nick Sarupen, each with a photo, education background,
-                official role, and political context. Built with semantic HTML and structured CSS.
-              </p>
+            <figure class="project-img-wrap"><img src="images/project-task-management-system.jpg" alt="Portfolio preview for the Task Management System project" loading="lazy" width="560" height="340"></figure>
+            <section class="project-info" aria-label="Task Management System project details">
+              <p class="project-tag">JavaScript ES6+ · Jest · HTML · CSS</p>
+              <h3>Task Management System</h3>
+              <p>Create, prioritise, complete and filter tasks with localStorage persistence, live statistics and 30 passing Jest tests.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary project-live" href="https://codeswithbux.github.io/Task-Management-System/" target="_blank" rel="noopener noreferrer" aria-label="Live View: Task Management System">Live View <span aria-hidden="true">↗</span></a>
+                <a class="btn project-source" href="https://github.com/codeswithbux/Task-Management-System" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Task Management System">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
             </section>
           </li>
 
+          <li class="project-card">
+            <figure class="project-img-wrap"><img src="images/project-enlighten-library.jpg" alt="Portfolio preview for the Enlighten Library project" loading="lazy" width="560" height="340"></figure>
+            <section class="project-info" aria-label="Enlighten Library project details">
+              <p class="project-tag">HTML5 · CSS3 · JavaScript</p>
+              <h3>Enlighten Library</h3>
+              <p>A multi-page eBook library and bookstore with catalogue search, genre filters, a saved library, cart and demonstration checkout.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary project-live" href="https://codeswithbux.github.io/Enlighten-Library/" target="_blank" rel="noopener noreferrer" aria-label="Live View: Enlighten Library">Live View <span aria-hidden="true">↗</span></a>
+                <a class="btn project-source" href="https://github.com/codeswithbux/Enlighten-Library" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Enlighten Library">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </li>
+
+          <li class="project-card">
+            <figure class="project-img-wrap"><img src="images/project-luminous-recipe-app.jpg" alt="Portfolio preview for the Luminous Recipe App project" loading="lazy" width="560" height="340"></figure>
+            <section class="project-info" aria-label="Luminous Recipe App project details">
+              <p class="project-tag">React · JavaScript · Vite</p>
+              <h3>Luminous Recipe App</h3>
+              <p>A React recipe app for discovering recipes, saving favourites and building a full Monday-to-Sunday meal plan.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary project-live" href="https://codeswithbux.github.io/React_Recipe_App/" target="_blank" rel="noopener noreferrer" aria-label="Live View: Luminous Recipe App">Live View <span aria-hidden="true">↗</span></a>
+                <a class="btn project-source" href="https://github.com/CodesWithBux/React_Recipe_App" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Luminous Recipe App">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </li>
+
+          <li class="project-card">
+            <figure class="project-img-wrap"><img src="images/project-little-lemon-restaurant.jpg" alt="Portfolio preview for the Little Lemon Restaurant project" loading="lazy" width="560" height="340"></figure>
+            <section class="project-info" aria-label="Little Lemon Restaurant project details">
+              <p class="project-tag">HTML5 · CSS3 · JavaScript</p>
+              <h3>Little Lemon Restaurant</h3>
+              <p>A Mediterranean restaurant website with menu browsing and a polished three-step reservation-to-confirmation flow.</p>
+              <div class="project-actions">
+                <a class="btn btn-primary project-live" href="https://codeswithbux.github.io/little-lemon-website/" target="_blank" rel="noopener noreferrer" aria-label="Live View: Little Lemon Restaurant">Live View <span aria-hidden="true">↗</span></a>
+                <a class="btn project-source" href="https://github.com/codeswithbux/little-lemon-website" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Little Lemon Restaurant">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </li>
         </ul>
       </article>
     </section>
@@ -143,7 +135,7 @@
           >
     </p>
     <p>&copy; 2026 Phatsimo Bakang Maseng. All rights reserved.</p>
-    <p><a href="mailto:email@example.com">email@example.com</a></p>
+    <p><a href="mailto:phatsimobakangmaseng@gmail.com">phatsimobakangmaseng@gmail.com</a></p>
   </footer>
 
 </body>
