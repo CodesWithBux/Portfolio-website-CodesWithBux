@@ -802,3 +802,66 @@ footer a:hover { color: #d4a017; }
   .certificate-dialog-content img { max-height: calc(100dvh - 175px); }
   .certificate-dialog-actions { padding: .65rem .85rem; }
 }
+
+
+/* About page repair — scoped rules to preserve Home, Projects and Contact. */
+.about-page { overflow-x: clip; }
+.about-page .page-banner { padding: clamp(2.5rem, 6vw, 4.5rem) 1.25rem; }
+.about-page .section-gap { padding-top: clamp(2rem, 5vw, 4rem); padding-bottom: clamp(2rem, 5vw, 4rem); }
+.about-page .about-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(220px, 280px); align-items: start; gap: clamp(1.25rem,4vw,3rem); }
+.about-page .about-grid > section { min-width: 0; }
+.about-page .about-figure { min-width: 0; width: 100%; margin: 0; }
+.about-page .about-photo { width: 100%; max-width: 280px; height: auto; aspect-ratio: 3 / 4; object-fit: cover; margin-inline: auto; }
+.about-page .skills-scroll { width:100%; min-width:0; overflow-x:auto; overscroll-behavior-inline:contain; -webkit-overflow-scrolling:touch; border-radius: 12px; margin-top: 1.25rem; }
+.about-page .skills-table { margin:0; min-width: 520px; width:100%; box-shadow:none; }
+.about-page .skills-table th,.about-page .skills-table td { padding: .8rem .9rem; }
+.about-page .certs-section { background:#fff; }
+.about-page .cert-intro { max-width: 760px; }
+.about-page .certs-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); align-items:stretch; gap:1.25rem; }
+.about-page .cert-card { display:flex; flex-direction:column; min-width:0; border-radius:12px; overflow:hidden; margin:0; }
+.about-page .cert-view-button { display:flex; flex-direction:column; width:100%; border:0; background:#fff; padding:0; cursor:zoom-in; text-align:left; }
+.about-page .cert-view-button img { width:100%; height:188px; object-fit:contain; object-position:center; background:#fff; padding:.75rem; border-bottom:1px solid #e9e2d7; }
+.about-page .cert-open-hint { display:block; padding:.3rem 1rem; font-size:.8rem; font-weight:700; color:#7a5905; }
+.about-page .cert-card .cert-issuer { padding:.75rem 1rem .2rem; letter-spacing:.04em; }
+.about-page .cert-card .cert-name { padding:0 1rem .5rem; margin:0; overflow-wrap:anywhere; }
+.about-page .cert-card-actions { display:flex; flex-wrap:wrap; gap:.5rem; padding:.6rem 1rem 1rem; margin-top:auto; }
+.about-page .cert-card-action { display:inline-flex; align-items:center; justify-content:center; padding:.55rem .75rem; border:1px solid #b8860b; border-radius:6px; font-size:.78rem; line-height:1.35; font-weight:700; text-align:center; text-decoration:none; }
+.about-page .cert-card-action:hover { text-decoration:none; }
+.about-page .cert-card-action-outline { color:#59430a; background:#fff; }
+.about-page .cert-card-action-primary { color:#13100b; background:#ead6a0; }
+.about-page .cert-view-button:focus-visible,.about-page .cert-card-action:focus-visible { outline:3px solid #b8860b; outline-offset:-3px; }
+.about-page .certificate-dialog { position:fixed; inset:0; margin:auto; width:min(1000px,96vw); max-width:96vw; max-height:96dvh; overflow:hidden; padding:0; border:0; background:#fff; border-radius:12px; }
+.about-page .certificate-dialog::backdrop { background:rgba(11,10,9,.82); }
+.about-page .certificate-dialog-inner { height:min(90dvh,1000px); max-height:96dvh; display:flex; flex-direction:column; }
+.about-page .certificate-dialog-header { flex:0 0 auto; }
+.about-page .certificate-dialog-content { flex:1 1 auto; min-height:0; overflow:auto; padding:1rem; display:flex; align-items:center; justify-content:center; }
+.about-page .certificate-dialog-content img { display:block; max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; }
+.about-page .certificate-dialog-actions { flex:0 0 auto; }
+@media(max-width:900px) {
+ .about-page .about-grid { grid-template-columns:minmax(0,1fr); }
+ .about-page .about-figure { max-width:280px; margin:auto; }
+ .about-page .certs-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:600px) {
+ .about-page .page-banner h1 { font-size:clamp(2rem,9vw,2.7rem); }
+ .about-page .certs-grid { grid-template-columns:minmax(0,1fr); gap:1rem; }
+ .about-page .cert-card { max-width:520px; width:100%; margin-inline:auto; }
+ .about-page .cert-view-button img { height:210px; }
+ .about-page .certificate-dialog { width:100vw; max-width:100vw; height:100dvh; max-height:100dvh; border-radius:0; }
+ .about-page .certificate-dialog-inner { height:100dvh; max-height:100dvh; }
+ .about-page .certificate-dialog-header { padding:.65rem .9rem; }
+ .about-page .certificate-dialog-content { padding:.5rem; }
+ .about-page .certificate-dialog-actions { padding:.6rem .9rem; }
+}
+
+/* Consistent four-item mobile navigation across every portfolio page. */
+@media (max-width: 600px) {
+  header { padding: .55rem 0 .7rem; }
+  header .container { flex-direction: column; align-items: center; gap: .35rem; }
+  #site-logo { margin: 0; }
+  #site-logo img { width: 74px; height: auto; }
+  #main-nav { width: 100%; }
+  #main-nav ul { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 0; width:100%; margin:0; padding:0; }
+  #main-nav ul li { min-width: 0; text-align: center; }
+  #main-nav ul li a { font-size: .73rem; letter-spacing: .015em; padding: .5rem .1rem; width:100%; }
+}
