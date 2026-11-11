@@ -38,7 +38,7 @@ Only these six projects appear on the Projects page. Every card has a **Live Vie
 
 ## Contact form delivery
 
-The contact form sends messages through [FormSubmit](https://formsubmit.co/) to the portfolio owner's email address. After deploying, **submit one test message**, check the inbox/spam folder for FormSubmit's activation email, and **confirm the email address**. Only then can the provider deliver messages to the inbox. The form must be tested on the published website; this project has no independent email backend. The footer email address opens the visitor's email app using `mailto:`.
+The contact form sends messages to the portfolio owner's email address. After deploying, **submit one test message**, check the inbox/spam folder for FormSubmit's activation email, and **confirm the email address**. Only then can the provider deliver messages to the inbox. The form must be tested on the published website; this project has no independent email backend. The footer email address opens the visitor's email app using `mailto:`.
 
 ## Contact page checklist
 
