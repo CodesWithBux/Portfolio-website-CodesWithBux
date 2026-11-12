@@ -50,8 +50,8 @@ The contact form sends messages to the portfolio owner's email address. After de
 - Message: required (20–5000 characters).
 - Consent: required checkbox.
 - Send Message: submits the form by POST to FormSubmit, with an anti-spam honeypot and CAPTCHA.
-- Footer email: clicking `phatsimobakangmaseng@gmail.com` opens the visitor's mail app.
 
-**One-time activation:** Upload the website to your public host, send a test message, and confirm the email sent by FormSubmit to `phatsimobakangmaseng@gmail.com`. Until this is done, delivery is not activated. FormSubmit hosts the confirmation page. Test sending and receiving from a different email address after activation. Check Spam if necessary. The form must be tested from an HTTP(S) published website, not by opening `contact.html` from local files.
+
+**One-time activation:** Upload the website to your public host, send a test message, and confirm the email sent by FormSubmit. Until this is done, delivery is not activated. FormSubmit hosts the confirmation page. Test sending and receiving from a different email address after activation. Check Spam if necessary. The form must be tested from an HTTP(S) published website, not by opening `contact.html` from local files.
 
 The form doesn't save messages in the GitHub Pages repository; FormSubmit handles delivery. Online delivery has not been end-to-end tested or activated by the creator of this ZIP.
